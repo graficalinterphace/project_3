@@ -11,15 +11,14 @@ A subjective grade will be applied to websites that are not cative and just appl
 */
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 #main-navbar {
-  background-color: purple;
+	background-color: purple;
   overflow: hidden;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top:0;
 }
 #navbar-container {
-  float: left;
-  width: 100%;
-  position: relative;
-}
-#main-navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -28,32 +27,30 @@ A subjective grade will be applied to websites that are not cative and just appl
   float: left;
 }
 #main-navbar ul li {
-  float: left;
+  display: block;
   position: relative;
   right: 50%;
-  display: block;
-  margin: 0 1em;
-  padding: 8px 28px;
+  float: left;
 }
 #main-navbar ul li a {
   display: block;
+  position: relative;
+  float: left;
   color: #fff;
   text-decoration: none;
+  padding: 8px;
+  text-align: center;
 }
-#main-navbar ul li:hover {
+#main-navbar ul a li:hover {
   font-weight: bold;
+  background-color: #222;
 }
 #here {
   background-color: #444;
 }
 #pages {
-  overflow: auto;
-}
-#pages-container {
-  float: left;
   width: 100%;
-  position: relative;
-  padding: 8px 0;
+  padding: 0;
 }
 #pages .page {
   float: left;
@@ -87,34 +84,57 @@ A subjective grade will be applied to websites that are not cative and just appl
 #meimg:hover {
   transform: rotate(4deg);
 }
+#readable-width {
+  max-width: 800px;
+  margin: auto;
+  justify-content: center;
+}
 .tribe {
   position:relative;
-	margin: 8px;
+	margin: auto;
   padding: 8px;
 	border:4px solid;
   border-image: linear-gradient(to bottom, forestgreen, saddlebrown) 1;
 	background-color: #333;
 }
+.norseimg {
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+}
 #resume {
   width: 800px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  padding: 100px;
+  text-align: left;
+  margin: auto;
+  padding: 0;
+}
+#resume h2 {
+  color: lightsalmon;
 }
 #contact {
-  position:relative;
-	margin: 8px;
-  padding: 12px;
-	background-color: goldenrod;
+  position:sticky;
+	margin: 0;
+  padding: 0;
+  text-align: center;
+	background-color: lightsalmon;
   color:black
+}
+.activity {
+  font-weight: bold;
+}
+.date {
+  position: absolute;
+  display: block;
+  right: 0;
 }
 body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: #444;
   color: blanchedalmond;
-  padding: 4px
+  margin-top: 40px;
+}
+body a {
+  color: inherit;
 }
 body a:hover {
   background-color: #999;

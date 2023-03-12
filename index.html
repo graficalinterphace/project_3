@@ -5,41 +5,43 @@
   <title>Index</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="/project_2/css/normalize.css">
+  <link rel="icon" href="docs/assets/letter_f.jpg">
 </head>
 <body>
   <header>
     <nav id="main-navbar">
-      <div class="navbar-container">
-        <ul>
-          <a href="#"><li id="here">Index</li></a>
-          <a href="norse.html"><li>Norse Gods</li></a>
-          <a href="resume.html"><li>Resume</li></a>
-        </ul>
-      </div>
+      <ul id="navbar-container">
+        <li id="here"><a href="#">Index</a></li>
+        <li><a href="norse.html">Norse Gods</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
     </nav>
   </header>
   <h1>ITMD-361 Project 2</h1>
   <p>Welcome to my website! These pages have been created for a class project. This specific page describe the project introduce each page. The first step of this project is to create three websites using only HTML, then publish them to GitHub. In this lesson I learned the basics of structuring websites and links in GitHub. The next step is to style the pages using CSS files.</p>
   <section id="pages">
     <h2>Pages</h2>
-      <div id="pages-container">
-        <div class="page">
-          <p><strong>Index</strong></p>
-          <p>You are here! This specific page introduces readers to the topics and rest of the pages.</p>
-        </div>
-          <div class="page">
-          <p><a href="norse.html"><strong>Norse Gods</strong></a></p>
-          <p>This page introduces a few Old Norse gods as they are portrayed in myths. It is adapted from a course on Norse mythology at IIT.</p>
-        </div>
-        <div class="page">
-          <p><a href="resume.html"><strong>Resume</strong></a></p>
-          <p>This is my resume. It is based on what I submitted to Admissions, with minor edits to reflect my time at IIT.</p>
-        </div>
-    </section>
+    <div class="page">
+      <p><strong>Index</strong></p>
+      <p>You are here! This specific page introduces readers to the topics and rest of the pages.</p>
+    </div>
+    <a href="norse.html">
+      <div class="page">
+        <p><strong>Norse Gods</strong></p>
+        <p>This page introduces a few Old Norse gods as they are portrayed in myths. It is adapted from a course on Norse mythology at IIT.</p>
+      </div>
+    </a>
+    <a href="resume.html">
+      <div class="page">
+        <p><strong>Resume</strong></p>
+        <p>This is my resume. It is based on what I submitted to Admissions, with minor edits to reflect my time at IIT.</p>
+      </div>
+    </a>
+  </section>
   <section>
     <h2>About me</h2>
     <img src="docs/assets/me.jpg" alt="Me" id="meimg">
-    <p>I am an ITM student interested in cybersecurity. I think web development is very interesting and I'm always trying to learn more! I enjoy playing games and listening to electronic music.</p>
+    <p>I am an ITM student interested in cybersecurity. I think web development is very interesting and I'm always trying to learn more! HTML has been quite fun, but CSS is a lot more confusing for me since there are so many different features to use and remember. I enjoy playing games and listening to electronic music.</p>
     <p>Here is a song I like:</p>
     <audio controls src="docs/assets/the_thing_she_saw_one_day.flac"></audio>
   </section>
