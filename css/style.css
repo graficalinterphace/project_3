@@ -1,0 +1,141 @@
+/*
+One valid, error-free CSS file with your original code; and one file containing the CSS reset code you used. Both linked from the head of all three HTML files
+Apply at least five of the same style elements to each of your pages. Example removing the list-style from navigation on all three pages with a single CSS deceleration.
+Apply at least five different style elements to each of your pages.
+Centered horizontal-navigation. At the top of and identical on every page.
+Use one imported font style and one browser native font style.
+Six screen capture images of successful validation. One HTML and one CSS validation for each website page. Use the live link to validate. (-50% if it doesn't validate)
+You must use relative units (em, rem, vm, %) in your CSS to make your pages fluid. You may use px units to put a maximum size or within content areas.
+Create at least one fluid layout page using relative units (em, rem, vm, %) and one fixed width layout page.
+A subjective grade will be applied to websites that are not cative and just apply the minimum required style.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+#main-navbar {
+  background-color: purple;
+  overflow: hidden;
+}
+#navbar-container {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+#main-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  float: left;
+}
+#main-navbar ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+  display: block;
+  margin: 0 1em;
+  padding: 8px 28px;
+}
+#main-navbar ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+#main-navbar ul li:hover {
+  font-weight: bold;
+}
+#here {
+  background-color: #444;
+}
+#pages {
+  overflow: auto;
+}
+#pages-container {
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 8px 0;
+}
+#pages .page {
+  float: left;
+  padding: 8px;
+  margin: 0.8em;
+  display: block;
+  width: 24vw;
+  min-width: 12em;
+  max-width: 20em;
+  height: 30vw;
+  min-height: 15em;
+  max-height: 25em;
+  box-shadow: 2px 2px 2px 4px #222;
+  background-color: lightgoldenrodyellow;
+  color:black;
+  font-family: 'Courier New', Courier, monospace;
+  transition: transform .3s;
+}
+#pages .page:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 4px 4px #222;
+}
+#meimg {
+  float: right;
+  position: relative;
+  margin: 12px;
+  padding: 0;
+  border-radius: 50%;
+  transition: transform .3s;
+}
+#meimg:hover {
+  transform: rotate(4deg);
+}
+.tribe {
+  position:relative;
+	margin: 8px;
+  padding: 8px;
+	border:4px solid;
+  border-image: linear-gradient(to bottom, forestgreen, saddlebrown) 1;
+	background-color: #333;
+}
+#resume {
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 100px;
+}
+#contact {
+  position:relative;
+	margin: 8px;
+  padding: 12px;
+	background-color: goldenrod;
+  color:black
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #444;
+  color: blanchedalmond;
+  padding: 4px
+}
+body a:hover {
+  background-color: #999;
+}
+h1 {
+	margin: 12px 0px 12px 0px;
+	padding:0px;
+	font:40px Philosopher;
+	font-weight:900;
+}
+h2 {
+	margin: 4px 0px 4px 0px;
+	padding:0px;
+	font:24px Philosopher;
+	font-weight:700;
+}
+#return {
+  background-color: purple;
+  text-align: center;
+}
+#return a {
+  color: #fff;
+  text-decoration: none;
+}

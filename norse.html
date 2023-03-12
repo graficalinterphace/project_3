@@ -3,24 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Norse Gods</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="/project_2/css/normalize.css">
 </head>
 <body>
   <header>
-    <p>Navigation</p>
-    <ul>
-      <li><a href="/project_1/index.html">Index</a></li>
-      <li>Norse Gods (you are here)</li>
-      <li><a href="/project_1/resume.html">Resume</a></li>
-    </ul>
+    <nav id="main-navbar">
+      <div id="navbar-container">
+        <ul>
+          <li><a href="index.html">Index</a></li>
+          <li id="here"><a href="#">Norse Gods</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
-
   <h1>Introduction to Norse Gods</h1>
   <p>This page will provide a non-comprehensive list of the most major Norse gods (as described in myths) and provide a breif summary covering them. There is no single comprehensive canon in Norse mythology, so this page is based on the most popular source of myths, the <em>Prose Edda</em>.</p>
   <figure>
-    <img src="/project_1/docs/assets/odin.png" alt="Odin">
+    <img src="docs/assets/odin.png" alt="Odin">
     <figcaption><em>Depiction of Odin riding his 8-legged horse.</em></figcaption>
   </figure>
-  <section>
+  <section class="tribe">
     <h2>The <em>&#198;sir</em></h2>
     <p><em>This is the the "primary" group of gods detailed in the myths. Most of the stories cover their lives. They reside in Asgard.</em></p>
     <p><strong>Odin</strong></p>
@@ -61,7 +65,7 @@
       <li>Goddess of youth and life. Guards apples that keep the gods from aging.</li>
     </ul>
   </section>
-  <section>
+  <section class="tribe">
     <h2>The <em>Vanir</em></h2>
     <p><em>A rival family of gods. After a war with the &#198;sir, they have come to a truce, exchanging important hostages.</em></p>
     <p><strong>Nj&#246;r&#240;</strong></p>
@@ -79,7 +83,7 @@
       <li>She is the most complex of goddesses, directly comparable Odin in many aspects.</li>
     </ul>
   </section>
-  <section>
+  <section class="tribe">
     <h2>Giants</h2>
     <p><em>Known as "j&#246;tunn", these giants are not neccessarily large. As a tribe they are in conflict with the &#198;sir, and are not classified as gods. However, a few specific individuals have been accepted as gods:</em></p>
     <p><strong>Loki</strong></p>
@@ -94,13 +98,14 @@
     </ul>
   </section>
   <figure>
-    <img src="/project_1/docs/assets/thor.jpg" alt="Thor">
+    <img src="docs/assets/thor.jpg" alt="Thor">
     <figcaption><em>A tiny statue depicting Thor.</em></figcaption>
+    <figcaption><a href="https://commons.wikimedia.org/w/index.php?curid=8327318">Reykjavik - Thor-Figur 1.jpg</a> by Wolfgang Sauber is licensed under CC BY-SA 3.0</figcaption>
   </figure>
-  <p><a href="https://commons.wikimedia.org/w/index.php?curid=8327318">File:Reykjavik - Thor-Figur 1.jpg</a> by Wolfgang Sauber is licensed under CC BY-SA 3.0</p>
-
   <footer>
-    <p><a href="/project_1/index.html">&larr; Return to Index</a></p>
+    <div id="return">
+      <p><a href="index.html">&larr; Return to Index</a></p>
+    </div>
   </footer>
 </body>
 </html>
