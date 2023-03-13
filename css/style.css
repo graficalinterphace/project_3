@@ -36,7 +36,7 @@
   text-decoration: underline;
   background-color: #777;
 }
-#here {
+#onpage {
   background-color: #444;
 }
 #pages {
@@ -166,7 +166,7 @@ body {
   background-color: #444;
   color: blanchedalmond;
   max-width: 900px;
-  margin-top: 40px;
+  margin-top: 400px;
   margin-left: auto;
   margin-right: auto;
   padding: 8px;
@@ -178,7 +178,7 @@ body a:hover {
   background-color: #999;
 }
 #norse {
-  background:#444 url(../docs/assets/yggdrasil.png) no-repeat fixed bottom right;
+  background: url(../docs/assets/yggdrasil.png) no-repeat fixed bottom right;
 }
 h1 {
   text-align: center;
