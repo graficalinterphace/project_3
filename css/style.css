@@ -10,13 +10,15 @@ Create at least one fluid layout page using relative units (em, rem, vm, %) and 
 A subjective grade will be applied to websites that are not cative and just apply the minimum required style.
 */
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;700;800;900&display=swap');
 #main-navbar {
-	background-color: purple;
+	background-color: green;
   overflow: hidden;
   width: 100%;
   position: fixed;
   z-index: 1;
-  top:0;
+  top: 0;
+  left: 0;
 }
 #navbar-container {
   list-style-type: none;
@@ -38,19 +40,19 @@ A subjective grade will be applied to websites that are not cative and just appl
   float: left;
   color: #fff;
   text-decoration: none;
-  padding: 8px;
+  padding: 8px 12px;
   text-align: center;
 }
-#main-navbar ul a li:hover {
-  font-weight: bold;
-  background-color: #222;
+#main-navbar ul li a:hover {
+  text-decoration: underline;
+  background-color: #777;
 }
 #here {
   background-color: #444;
 }
 #pages {
   width: 100%;
-  padding: 0;
+  display: inline-block;
 }
 #pages .page {
   float: left;
@@ -59,10 +61,10 @@ A subjective grade will be applied to websites that are not cative and just appl
   display: block;
   width: 24vw;
   min-width: 12em;
-  max-width: 20em;
+  max-width: 16em;
   height: 30vw;
   min-height: 15em;
-  max-height: 25em;
+  max-height: 20em;
   box-shadow: 2px 2px 2px 4px #222;
   background-color: lightgoldenrodyellow;
   color:black;
@@ -73,8 +75,17 @@ A subjective grade will be applied to websites that are not cative and just appl
   transform: scale(1.1);
   box-shadow: 4px 4px 4px 4px #222;
 }
+#pages .page h3 {
+  margin: 8px 4px 0px 4px;
+	padding: 0;
+	font :12px;
+}
+#pages .page:hover h3 {
+  text-decoration: underline;
+}
 #meimg {
   float: right;
+  right: 1vw;
   position: relative;
   margin: 12px;
   padding: 0;
@@ -84,54 +95,90 @@ A subjective grade will be applied to websites that are not cative and just appl
 #meimg:hover {
   transform: rotate(4deg);
 }
-#readable-width {
-  max-width: 800px;
-  margin: auto;
-  justify-content: center;
-}
-.tribe {
-  position:relative;
-	margin: auto;
-  padding: 8px;
-	border:4px solid;
-  border-image: linear-gradient(to bottom, forestgreen, saddlebrown) 1;
-	background-color: #333;
-}
 .norseimg {
-  margin: auto;
-  text-align: center;
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+.norseimg img{
   display: inline-block;
 }
+.tribe {
+  display: inline-block;
+  margin: 20px 0;
+	width: 100%;
+  padding: 8px 0;
+	border: 2px solid green;
+  border-radius: 25px;
+  background-color: #222;
+  opacity: 0.8;
+}
+.tribe h2, .tribe p {
+  padding: 0 16px;
+  margin-bottom: 4px;
+}
+.tribe ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 #resume {
-  width: 800px;
+  width: 8in;
   text-align: left;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
 }
-#resume h2 {
-  color: lightsalmon;
+#resume h1 {
+  font: 40px Phudu;
 }
 #contact {
-  position:sticky;
+  display: inline-block;
+  width: 100%;
 	margin: 0;
   padding: 0;
   text-align: center;
 	background-color: lightsalmon;
   color:black
 }
+.pro {
+  display: inline-block;
+	width: 100%;
+  margin: 0;
+  padding: 8px 0;
+	border: 2px lightsalmon;
+  border-style: solid none;
+  background-color: #222;
+}
+.pro h2 {
+  padding: 0 30px;
+  font: 28px Phudu;
+  color: lightsalmon;
+}
+.pro h3, .pro p {
+  padding: 8px 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.pro ul {
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding-left: 60px;
+}
 .activity {
   font-weight: bold;
 }
-.date {
-  position: absolute;
-  display: block;
-  right: 0;
+.name {
+  justify-content: space-between;
+  display: flex;
+  font-size: 16px;
 }
 body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: #444;
   color: blanchedalmond;
-  margin-top: 40px;
+  max-width: 900px;
+  margin: 40px auto auto auto;
+  padding: 8px;
 }
 body a {
   color: inherit;
@@ -139,23 +186,19 @@ body a {
 body a:hover {
   background-color: #999;
 }
+#norse {
+  background:#444 url(../docs/assets/yggdrasil.png) no-repeat fixed bottom right;
+}
 h1 {
-	margin: 12px 0px 12px 0px;
-	padding:0px;
-	font:40px Philosopher;
-	font-weight:900;
+  text-align: center;
+	margin: 12px 0;
+	padding: 0px;
+	font: 40px Philosopher;
+	font-weight: 900;
 }
 h2 {
-	margin: 4px 0px 4px 0px;
-	padding:0px;
-	font:24px Philosopher;
-	font-weight:700;
-}
-#return {
-  background-color: purple;
-  text-align: center;
-}
-#return a {
-  color: #fff;
-  text-decoration: none;
+	margin: 4px 0;
+	padding: 0px;
+	font: 24px Philosopher;
+	font-weight: 700;
 }
