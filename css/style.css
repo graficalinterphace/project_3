@@ -161,7 +161,7 @@
   display: flex;
   font-size: 16px;
 }
-body {
+.page-settings {
   font-family: Helvetica, Arial, sans-serif;
   background-color: #444;
   color: blanchedalmond;
@@ -171,10 +171,10 @@ body {
   margin-right: auto;
   padding: 8px;
 }
-body a {
+.page-settings a {
   color: inherit;
 }
-body a:hover {
+.page-settings a:hover {
   background-color: #999;
 }
 #norse {
