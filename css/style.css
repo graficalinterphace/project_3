@@ -184,14 +184,14 @@ body a:hover {
 }
 h1 {
   text-align: center;
-	margin: 12px 0;
-	padding: 0px;
-	font: 40px Philosopher;
-	font-weight: 900;
+  margin: 12px 0;
+  padding: 0px;
+  font: 40px Philosopher;
+  font-weight: 900;
 }
 h2 {
-	margin: 4px 0;
-	padding: 0px;
-	font: 24px Philosopher;
-	font-weight: 700;
+  margin: 4px 0;
+  padding: 0px;
+  font: 24px Philosopher;
+  font-weight: 700;
 }
