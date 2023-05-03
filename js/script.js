@@ -16,7 +16,7 @@ function initMap(){
   var marker = new google.maps.Marker({
     position: location,
     map: map,
-    title: "Dumpling",
+    title: "Pan Fried Dumplings",
     animation: google.maps.Animation.DROP,
     icon: icon
   });
