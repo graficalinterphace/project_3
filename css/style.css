@@ -109,12 +109,13 @@
 }
 /*/////////////////////////////////////////////////////////*/
 .slideshow-container {
-  max-width: 800px;
   position: relative;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  display: block;
+  text-align: center;
 }
 .norseimg {
   height: fit-content;
@@ -141,8 +142,10 @@
   color: whitesmoke;
   font-weight: bold;
   font-size: 30px;
-  transition: 0.2s ease;
   user-select: none;
+}
+.next {
+  right: 0;
 }
 .tribe {
   display: inline-block;
