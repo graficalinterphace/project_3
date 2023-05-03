@@ -229,7 +229,6 @@ body a {
 body a:hover {
   background-color: #999;
 }
-/*/////////////////////////////////////////////////////////*/
 @media only screen and (max-width: 1000px) {  
   img {
     max-width: 75%;
@@ -239,21 +238,18 @@ body a:hover {
     font-size: 60px;
   }
   .tribe {
-    display: inline-block;
-    margin: 20px 0;
+    margin: 10px 0;
     width: 100%;
-    padding: 8px 0;
-    border: 2px solid green;
-    border-radius: 25px;
+    padding: 6px 0;
     opacity: 0.8;
     text-align: left
   }
-  body {
-    background-color: red;
-  }
   #norse {
-    font-size: 16px;
+    font-size: 18px;
     background-image: none;
+  }
+  #norse h2 {
+    font-size: 30px;
   }
 }
 @media only screen and (max-width: 600px) {  
@@ -265,7 +261,6 @@ body a:hover {
     font-size: 75px;
   }
   .tribe {
-    display: inline-block;
     margin: 4px 0;
     padding: 4px 0;
     opacity: 1;
@@ -275,11 +270,9 @@ body a:hover {
     text-align: left;
   }
   #norse {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
-
-/*/////////////////////////////////////////////////////////*/
 h1 {
   text-align: center;
   margin: 12px 0;
