@@ -182,6 +182,24 @@ body a:hover {
 #norse {
   background: #444 url(../docs/assets/yggdrasil.png) no-repeat fixed bottom right;
 }
+
+#wrapper {
+  width: 600px;
+  height: 600px;
+  background-color: black;
+  color: black;
+  margin:0 auto;
+  overflow: hidden;
+  }
+#map {
+  width: 600px; 
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 0;
+  }
+
 h1 {
   text-align: center;
   margin: 12px 0;
