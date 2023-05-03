@@ -1,5 +1,30 @@
+//slides
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("norseimg");
+  if (n > slides.length - 1) {
+    slideIndex = 0
+  }
+  if (n < 1) {
+    slideIndex = slides.length - 1
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex].style.display = "block";
+}
+
+var slideIndex = 0;
+showSlides(slideIndex);
+
 //map
-let map;
+var map;
 
 function initMap(){
   const location = { lat: 37.548940, lng: -122.049650 };
@@ -41,23 +66,3 @@ function initMap(){
 }
 
 initMap();
-
-//slides
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("norseimg");
-  if (n > slides.length) {
-    slideIndex = 1
-  }
-  if (n < 1) {
-    slideIndex = slides.length
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex - 1].style.display = "block";
-}
-let slideIndex = 1;
